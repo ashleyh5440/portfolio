@@ -1,0 +1,64 @@
+* {
+    margin:  0;
+    padding: 0;
+    /* color: black; */
+    background-color: black;
+    color: white
+}
+header,
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: purple;
+    color: white;
+}
+h1,
+h2 {
+    text-align: center;
+}
+img {
+    display: block;
+    height: 125px;
+    width: 115x;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul {
+    padding-left: 40px;
+    font-size: 20px;
+}
+p {
+    text-align: left;
+    font-size: 20px;
+    color: white;
+}
+.heading-links a{
+    color: green;
+    font-size: 25px;
+    text-align: center; 
+    display: block;
+}
+.card {
+    width: 40%;
+    margin: 40px auto;
+    border: 5px solid purple;
+    box-shadow: 5px 10px #888888;
+}
+.keyword li span{
+    font-family: 'Courier New', Courier, monospace;
+    color: orange;
+    font-size: 18px;
+}
+.select li span{
+    font-family: Arial;
+    color: aqua;
+}
+.code-ex{
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    font-size: 15px;
+}
+#title {
+    background-color: purple;
+    font-family: 'Courier New', Courier, monospace;
+}
