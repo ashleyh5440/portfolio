@@ -1,8 +1,9 @@
 * {
-    color: rgb(75, 43, 7);
+    color: black;
 }
 .header {
-    background-color: blue;
+    background-color: darkblue;
+    text-align: right;
 }
 .header-image {
     /* below centers the image */
@@ -12,5 +13,24 @@
    width: 50%;
 }
 .footer {
-    background-color: blue;
+    background-color: darkblue;
+}
+/* "display:inline" is what made them sit side by side */
+#github {
+    display: inline;
+    font-size: 25px;
+    color: white;
+    margin: 10px;
+}
+#portfolio {
+    display: inline;
+    font-size: 25px;
+    color: white;
+    margin: 10px;
+}
+#contact {
+    display: inline;
+    font-size: 25px;
+    color: white;
+    margin: 10px;
 }
