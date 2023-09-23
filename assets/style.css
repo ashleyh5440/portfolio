@@ -1,9 +1,17 @@
 * {
     color: black;
+    margin: 0px;
+    padding: 0px;
 }
 .header {
-    background-color: darkblue;
+    background-color: green;
     text-align: right;
+    border-bottom: 5px solid gold;
+}
+.nav {
+    /* text-align: right; <-- why doesn't this work here
+    but works in the header? Also, why can't I use display:inline 
+    here and had to use ids?*/
 }
 .header-image {
     /* below centers the image */
@@ -12,8 +20,14 @@
    margin-right: auto;
    width: 50%;
 }
+.figcap {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    color: green;
+    text-align: center;
+}
 .footer {
-    background-color: darkblue;
+    background-color: green;
 }
 /* "display:inline" is what made them sit side by side */
 #github {
