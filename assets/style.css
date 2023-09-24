@@ -6,6 +6,12 @@
 h1 {
     text-align: center;
 }
+section {
+    background-color: aqua;
+    padding: 10px;
+    border-top: 4px solid gold;
+    /* why doesn't this extend across the whole page? */
+}
 .header {
     background-color: green;
     text-align: right;
