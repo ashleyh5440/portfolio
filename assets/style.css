@@ -12,15 +12,17 @@ section {
     border-top: 4px solid gold;
     /* why doesn't this extend across the whole page? */
 }
+li {
+    /* "display:inline" is what made them sit side by side */
+    text-align: right; 
+    display: inline;
+    margin: 10px;
+    font-size: 30px;
+}
 .header {
     background-color: green;
     text-align: right;
     border-bottom: 5px solid gold;
-}
-.nav {
-    /* text-align: right; <-- why doesn't this work here
-    but works in the header? Also, why can't I use display:inline 
-    here and had to use ids?*/
 }
 .header-image {
     /* below centers the image */
@@ -46,21 +48,3 @@ section {
     background-color: green;
 }
 /* "display:inline" is what made them sit side by side */
-#github {
-    display: inline;
-    font-size: 25px;
-    color: white;
-    margin: 10px;
-}
-#portfolio {
-    display: inline;
-    font-size: 25px;
-    color: white;
-    margin: 10px;
-}
-#contact {
-    display: inline;
-    font-size: 25px;
-    color: white;
-    margin: 10px;
-}
