@@ -46,6 +46,9 @@ li {
     width: 500px;
     padding: 10px;
     border: 5px solid gold;
+    margin: 0 auto;
+    /* playing with the margins can help you center things; having auto makes
+    the left and right try to have the same amount of space */
 }
 .footer {
     background-color: green;
