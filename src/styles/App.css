@@ -1,268 +1,35 @@
-body {
-  background-image: url(https://img.freepik.com/free-vector/pink-neon-background_53876-91656.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1704240000&semt=ais);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-h1 {
-  font-size: 30px;
-  text-align: center;
-  font-family: 'DotGothic16', sans-serif;
-  font-size: 50px;
-}
-
-p {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
-  text-align: center;
-}
-
-/* index.hml */
-.base {
-  position: relative;
-}
-
-#base-img{
-  width: 50%;
-  margin-left: 25%; 
-  position: relative;
-
-}
-
-.y-a-buttons {
-  width: 4%;
-  margin: 2%;
-}
-
-.x-b-buttons {
-  width: 4%;
-  margin: 2%;
+/* nav */
+.nav-collapsed {
+    background-color: rgb(170, 37, 177);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
-#y-button {
-  position: absolute;
-  bottom: 25%;
-  left: 64%;
-  width: 2.5%;
-  height: 4%;
-  background-color: #a30092;
-  border-radius: 45%;
-  border: none;
+#name, #menu-icon {
+    margin: auto 2%;
 }
 
-#y-button:hover {
-  box-shadow: 0 0 10px 10px white;
-  border-radius: 50%;
+/* intro */
+.intro {
+    background-image: url(../assets/background.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
 }
 
-#y-button:hover::after {
-  content: "Contact Me";
-  position: absolute;
-  bottom: 23%;
-  left: 62%;
-  border: 1px #aaaaaa solid;
-  background-color: rgba(0, 0, 0, 0.185);
-  border-radius: 45%;
-  font-size: 25px;
-  text-align: center;;
-  padding: 12px;
-  color: #fff;
-  z-index: 1;
+.container-left{
+    width: 40%;
+    margin: 5% 3%;
 }
 
-#a-button {
-  position: absolute;
-  bottom: 25%;
-  left: 68.5%; 
-  width: 2.5%;
-  height: 4%;
-  background-color: #a30092;
-  border-radius: 45%;
-  border: none;
-}
-
-#a-button:hover {
-  box-shadow: 0 0 10px 10px white;
-  border-radius: 50%;
-}
-
-#a-button:hover::after {
-  content: "About Me";
-  position: absolute;
-  bottom: 23%;
-  left: 69%;
-  border: 1px #aaaaaa solid;
-  background-color: rgba(0, 0, 0, 0.185);
-  border-radius: 45%;
-  font-size: 25px;
-  text-align: center;;
-  padding: 12px;
-  color: #fff;
-  z-index: 1;
-}
-
-#x-button {
-  position: absolute;
-  bottom: 30%;
-  left: 66.3%;
-  width: 2.5%;
-  height: 4%;
-  background-color: #a30092;
-  border-radius: 45%;
-  border: none;
-}
-
-#b-button {
-  position: absolute;
-  bottom: 20%;
-  left: 66.3%;
-  width: 2.5%;
-  height: 4%;
-  background-color: #a30092;
-  border-radius: 45%;
-  border: none;
-}
-
-#b-button:hover {
-  box-shadow: 0 0 10px 10px white;
-  border-radius: 50%;
-}
-
-#b-button:hover::after {
-  content: "My Works";
-  position: absolute;
-  bottom: 17%;
-  left: 66%;
-  border: 1px #aaaaaa solid;
-  background-color: rgba(0, 0, 0, 0.185);
-  border-radius: 45%;
-  font-size: 25px;
-  text-align: center;;
-  padding: 12px;
-  color: #fff;
-  z-index: 1;
-}
-
-#profile-picture {
-  position: absolute;
-  width: 10%;
-  left: 45%;
-  bottom: 7%;
-  animation: fadeIn 4s;
-}
-
-#name {
-  position: absolute;
-  width: 17%;
-  left: 41%;
-  bottom: 65%;
-  animation: floating;
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-top: 5px;
-}
-
-#index-about-button, #index-works-button, #index-contact-button {
-  border: none;
-  font-size: 25px;
-  font-family: 'DotGothic16', sans-serif;
-  background-color: #a30092;
-  margin-top: 5%;
-}
-
-/* info.html */
-
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 2%;
-  font-size: 25px;
-  margin-top: 5%;
-} 
-
-.project-img {
-  width: 99%;
-}
-
-#project1, #project2, #project3 {
-  width: 100%;
-  margin-bottom: 7%;
-}
-
-#project1:hover {
-  box-shadow: 0 0 10px 10px #200282;
-  display: block;
-  margin: 0 auto;
-}
-
-#project2:hover {
-  box-shadow: 0 0 10px 10px #200282;
-  display: block;
-  margin: 0 auto;
-}
-
-#project3:hover {
-  box-shadow: 0 0 10px 10px #200282;
-  display: block;
-  margin: 0 auto;
-}
-
-#home-button, #about-button, #works-button, #contact-button {
-  border: none;
-  font-size: 25px;
-  font-family: 'DotGothic16', sans-serif;
-  background-color: #a30092;
-}
-
-#about-me, #my-works {
-  margin-top: 7%;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@keyframes floating {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, 15px); }
-  100%   { transform: translate(0, -0px); }   
-}
-
-@keyframes slidein {
-  from {
-    bottom: 20%;
-    width: 23%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 23%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  nav {
-      display: flex;
-      flex-direction: column;
-      margin-left: 35%;
-      width: 30%;
-  }
-  .row {
-      flex-direction: column;
-  }
-  #about-button, #works-button, #contact-button {
-      display: none;
-  }
-  .hidden {
-      display: flex;
-  }
+.container-right {
+    width: 60%;
 }
