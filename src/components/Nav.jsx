@@ -1,32 +1,36 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 function Nav() {
-    const [menuExpanded, setMenuExpanded] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setMenuExpanded(!menuExpanded)
-    }
+    const toggleAccordion = () => {
+        setIsOpen(!isOpen);
+    };
 
-    return (
+    return(
         <section>
-            {/* collapsed */}
-            <div className="nav-collapsed" onClick={toggleMenu}>
-                <div id="name">A</div>
-                <div id="menu-icon">☰</div>
-            </div>
-
-            {/* expanded */}
-            <div className={`nav-expanded ${menuExpanded ? '' : 'hidden'}`}>
-                <div className="left"></div>
-                <div className="right">
-                    <button>Home</button>
-                    <button>Portfolio</button>
-                    <button>About</button>
-                    <button>Resume</button>
+            <div className={`accordion ${isOpen ? 'expanded' : ''}`} id="accordionExample">
+                <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
+                        <button className="accordion-button" type="button" onClick={toggleAccordion} aria-expanded={isOpen ? "true" : "false"} aria-controls="collapseOne">
+                            A
+                        </button>
+                    </h2>
+                    <div id="collapseOne" className={`accordion-collapse collapse ${isOpen ? 'show' : ''}`} aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div className="accordion-body">
+                            <div className="nav-left"></div>
+                            <div className="nav-right">
+                                <button id="home-btn">Home</button>
+                                <button id="portfolio-btn">Portfolio</button>
+                                <button id="about-btn">About</button>
+                                <button id="resume-btn">Resume</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-    );
-};
+    )
+}
 
 export default Nav;
