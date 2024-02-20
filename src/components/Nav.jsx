@@ -18,7 +18,11 @@ function Nav() {
                     </h2>
                     <div id="collapseOne" className={`accordion-collapse collapse ${isOpen ? 'show' : ''}`} aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div className="accordion-body">
-                            <div className="nav-left"></div>
+                            <div className="nav-left">
+                                <img id="github-logo" src="../src/assets/github.png" />
+                                <img id="gmail-logo" src="../src/assets/gmail.png" />
+                                <img id="linkedin-logo" src="../src/assets/linkedin.png" />
+                            </div>
                             <div className="nav-right">
                                 <button id="home-btn">Home</button>
                                 <button id="portfolio-btn">Portfolio</button>
