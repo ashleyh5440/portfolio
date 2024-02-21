@@ -1,12 +1,12 @@
 import { useState } from 'react';
 
-import arrowImg from '../../assets/arrow.png';
-import project1Img from '../../assets/gods-and-beasts.png';
-import project2Img from '../../assets/the-box-office-dojo.png';
-import project3Img from '../../assets/coding-study-guide.png';
-import project4Img from '../../assets/portfolio.png';
-import project5Img from '../../assets/password-generator.png';
-import project6Img from '../../assets/personal-calendar.png';
+import arrowImg from '../assets/arrow.png';
+import project1Img from '../assets/gods-and-beasts.png';
+import project2Img from '../assets/the-box-office-dojo.png';
+import project3Img from '../assets/coding-study-guide.png';
+import project4Img from '../assets/portfolio.png';
+import project5Img from '../assets/password-generator.png';
+import project6Img from '../assets/personal-calendar.png';
 
 function Projects () {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -36,7 +36,7 @@ function Projects () {
                 <div className={`card-container ${index === currentSlide ? 'active' : ''}`} key={index}>
                     <div className="card-content">
                         <div className="project-title">{project.title}</div>
-                        <div className="project-img"><img src={project.img} style={{ width: '600px', height: '400px' }}/></div>
+                        <div className="project-img"><img src={project.img} style={{ width: '300px', height: '200px' }}/></div>
                     </div>
                 </div>
             ))}

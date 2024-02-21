@@ -1,15 +1,13 @@
 import { useState } from 'react'
-import Home from './components/Home';
 import Nav from './components/Nav';
-import Projects from './components/projects/Projects';
-import './styles/App.css';
+import { Outlet } from 'react-router-dom';
+import './styles/index.css';
 
 function App() {
   return (
     <main>
       <Nav />
-      <Home />
-      <Projects />
+      <Outlet />
     </main>
   );
 }
