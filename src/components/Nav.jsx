@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Nav() {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,10 +23,13 @@ function Nav() {
                                 <img id="linkedin-logo" src="../src/assets/linkedin.png" />
                             </div>
                             <div className="nav-right">
-                                <button id="home-btn">Home</button>
-                                <button id="portfolio-btn">Portfolio</button>
-                                <button id="about-btn">About</button>
-                                <button id="resume-btn">Resume</button>
+                                <button id="home-btn"><NavLink to='/' className={({ isActive }) => (isActive ? "text-white fs-3" :  'text-gray-300 hover:bg-gray-700 hover:text-white text-sm px-3')}>Home</NavLink></button>
+
+                                <button id="portfolio-btn"><NavLink to='/portfolio' className={({ isActive }) => (isActive ? "text-white fs-3" :  'text-gray-300 hover:bg-gray-700 hover:text-white text-sm px-3')}>Portfolio</NavLink></button>
+
+                                <button id="about-btn"><NavLink to='/about' className={({ isActive }) => (isActive ? "text-white fs-3" :  'text-gray-300 hover:bg-gray-700 hover:text-white text-sm px-3')}>About</NavLink></button>
+
+                                <button id="resume-btn"><NavLink to='/resume' className={({ isActive }) => (isActive ? "text-white fs-3" :  'text-gray-300 hover:bg-gray-700 hover:text-white text-sm px-3')}>Resume</NavLink></button>
                             </div>
                         </div>
                     </div>

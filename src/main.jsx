@@ -7,7 +7,7 @@ import './styles/index.css';
 import App from './App.jsx';
 import Home from './pages/Home.jsx';
 // import Contact from './pages/Contact.jsx';
-// import About from './pages/About.jsx';
+import About from './pages/About.jsx';
 // import Portfolio from './pages/Portfolio.jsx';
 
 const router = createBrowserRouter([
@@ -19,10 +19,10 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
-      // {
-      //   path: '/about',
-      //   element: <About />,
-      // },
+      {
+        path: '/about',
+        element: <About />,
+      },
       // {
       //   path: '/contact',
       //   element: <Contact />,
