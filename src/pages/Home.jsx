@@ -8,7 +8,7 @@ function Home() {
         <section>
             <div className="intro">
                 <div className="container-left">
-                    <h1>Hi, I'm Ashley</h1>
+                    <h2>Hi, I'm Ashley</h2>
                     <br />
                 <p>Front end developer with background experience in education, marketing, publishing, and web development.</p>
                 </div>
@@ -17,9 +17,11 @@ function Home() {
                 </div>
             </div>
             <div className="projects-carousel-container">
+                <h1>Recent Projects</h1>
                 <Projects />
             </div>
             <div className="contact-links-container">
+                <h1>Contact Info</h1>
                 <ContactLinks />
             </div>
         </section>

@@ -59,8 +59,8 @@ function Contact() {
                 <Button variant="primary" type="submit" id="form-submit-btn" onClick={handleFormSubmit}>Submit</Button>
             </Form>
         </div>
-        <h1>You can also find me:</h1>
-        <div className="contact-links">
+        <h1>You can also get in touch with me through:</h1>
+        <div>
             <ContactLinks />
         </div>
     </section>

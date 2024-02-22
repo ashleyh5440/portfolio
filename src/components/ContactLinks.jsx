@@ -4,13 +4,16 @@ function ContactLinks () {
     return (
         <section className="contact-links">
             <div className="link">
-                <p>Email: ashleyh5440@gmail.com</p>
+                <h3>Email</h3> 
+                <p>ashleyh5440@gmail.com</p>
             </div>
             <div className="link">
-                <p>GitHub: ashleyh5440</p>
+                <h3>GitHub</h3> 
+                <p>ashleyh5440</p>
             </div>
             <div className="link">
-                <p>LinkedIn: Ashley Hill</p>
+                <h3>LinkedIn</h3> 
+                <p>Ashley Hill</p>
             </div>
         </section>
     );

@@ -2,6 +2,17 @@ body {
     background-color: rgb(42, 10, 60);
 }
 
+h1, h3 {
+    font-family: 'DotGothic16', sans-serif;
+    color: white;
+    text-align: center;
+ }
+
+ p {
+    font-size: 25px;
+    color: white;
+ }
+
 /* nav */
 
 .accordion-item {
@@ -105,10 +116,9 @@ body {
     height: 250px;
 }
 
-.intro h1, .intro p {
+.intro h2 {
     color: white;
     font-family: 'DotGothic16', sans-serif;
-    font-size: 25px;
 }
 
 .container-left{
@@ -147,12 +157,20 @@ body {
   .contact-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    /* justify-content: space-between; */
   }
 
   .link {
-    margin: 2%;
-    border: 2px solid blue;
+    font-size: 20px;
+    text-align: center;
+    margin: 5% 10%;
+    /* border: 2px solid red; */
+  }
+
+  .contact-method {
+    font-family: 'DotGothic16', sans-serif;
+    color: white;
   }
 
  /* contact page */
@@ -172,11 +190,6 @@ body {
  .mb-3 {
     font-family: 'DotGothic16', sans-serif;
     font-size: 25px;
-    color: white;
- }
-
-h1{
-    font-family: 'DotGothic16', sans-serif;
     color: white;
  }
 
