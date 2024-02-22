@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Projects from '../components/Projects';
+import ContactLinks from '../components/ContactLinks';
 import profilePic from '../assets/profilepic.png';
 
 function Home() {
@@ -15,11 +16,11 @@ function Home() {
                     <img id="profile-pic" src={profilePic} />
                 </div>
             </div>
-            <div className="projects-carousel">
+            <div className="projects-carousel-container">
                 <Projects />
             </div>
-            <div className="contact">
-
+            <div className="contact-links-container">
+                <ContactLinks />
             </div>
         </section>
     );
