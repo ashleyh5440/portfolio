@@ -41,6 +41,8 @@ function Contact() {
 
   return (
     <section className="contact-container">
+        <br />
+        <h1>Send me a message!</h1>
         <div className="contact-form">
             <Form>
                 <Form.Group className="mb-3" controlId="contactForm.ControlInput1">

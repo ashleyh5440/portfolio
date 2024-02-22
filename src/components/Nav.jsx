@@ -23,13 +23,13 @@ function Nav() {
                                 <img id="linkedin-logo" src="../src/assets/linkedin.png" />
                             </div>
                             <div className="nav-right">
-                                <button id="home-btn"><NavLink to='/' className={({ isActive }) => (isActive ? "text-white fs-3" :  'text-gray-300 hover:bg-gray-700 hover:text-white text-sm px-3')}>Home</NavLink></button>
+                                <button id="home-btn" onClick={toggleAccordion}><NavLink to='/' className={({ isActive }) => (isActive ? "text-white fs-3" :  'text-gray-300 hover:bg-gray-700 hover:text-white text-sm px-3')}>Home</NavLink></button>
 
-                                <button id="about-btn"><NavLink to='/about' className={({ isActive }) => (isActive ? "text-white fs-3" :  'text-gray-300 hover:bg-gray-700 hover:text-white text-sm px-3')}>About</NavLink></button>
+                                <button id="about-btn" onClick={toggleAccordion}><NavLink to='/about' className={({ isActive }) => (isActive ? "text-white fs-3" :  'text-gray-300 hover:bg-gray-700 hover:text-white text-sm px-3')}>About</NavLink></button>
 
-                                <button id="portfolio-btn"><NavLink to='/portfolio' className={({ isActive }) => (isActive ? "text-white fs-3" :  'text-gray-300 hover:bg-gray-700 hover:text-white text-sm px-3')}>Portfolio</NavLink></button>
+                                <button id="portfolio-btn" onClick={toggleAccordion}><NavLink to='/portfolio' className={({ isActive }) => (isActive ? "text-white fs-3" :  'text-gray-300 hover:bg-gray-700 hover:text-white text-sm px-3')}>Portfolio</NavLink></button>
 
-                                <button id="resume-btn"><NavLink to='/contact' className={({ isActive }) => (isActive ? "text-white fs-3" :  'text-gray-300 hover:bg-gray-700 hover:text-white text-sm px-3')}>Contact</NavLink></button>
+                                <button id="resume-btn" onClick={toggleAccordion}><NavLink to='/contact' className={({ isActive }) => (isActive ? "text-white fs-3" :  'text-gray-300 hover:bg-gray-700 hover:text-white text-sm px-3')}>Contact</NavLink></button>
                             </div>
                         </div>
                     </div>

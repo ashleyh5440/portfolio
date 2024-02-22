@@ -113,7 +113,6 @@ h1, h3 {
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 250px;
 }
 
 .intro h2 {
@@ -122,12 +121,11 @@ h1, h3 {
 }
 
 .container-left{
-    width: 40%;
+    width: 50%;
     margin: 5% 3%;
 }
 
 .container-right {
-    height: 250px;
     width: 250px;
     display: flex;
     justify-content: flex-end;
@@ -158,6 +156,7 @@ h1, h3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     /* justify-content: space-between; */
   }
 
