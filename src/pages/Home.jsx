@@ -8,9 +8,9 @@ function Home() {
         <section>
             <div className="intro">
                 <div className="container-left">
-                    <h2>Hi, I'm Ashley</h2>
+                    <h2 class="animate__animated animate__zoomIn">Hi, I'm Ashley</h2>
                     <br />
-                <p>Front end developer with background experience in education, marketing, publishing, and web development.</p>
+                <p class="animate__animated animate__fadeIn animate__delay-2s">Front end developer with background experience in education, marketing, publishing, and web development.</p>
                 </div>
                 <div className="container-right">
                     <img id="profile-pic" src={profilePic} />

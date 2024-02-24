@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
-import arrowImg from '../assets/arrow.png';
 import project1Img from '../assets/gods-and-beasts.png';
 import project2Img from '../assets/the-box-office-dojo.png';
 import project3Img from '../assets/coding-study-guide.png';
