@@ -3,7 +3,7 @@ body {
 }
 
 h1, h3 {
-    font-family: 'DotGothic16', sans-serif;
+    font-family: "Englebert", cursive;
     color: white;
     text-align: center;
  }
@@ -73,7 +73,7 @@ h1, h3 {
 .nav-right button {
     height: 25%;
     border: none;
-    font-family: 'DotGothic16', sans-serif;
+    font-family: "Englebert", cursive;
     font-size: 30px;
     color: white;
 }
@@ -117,12 +117,12 @@ h1, h3 {
 
 .intro h2 {
     color: white;
-    font-family: 'DotGothic16', sans-serif;
+    font-family: "Englebert", cursive;
 }
 
 .container-left{
     width: 50%;
-    margin-top: 20%;
+    margin-top: 15%;
     margin-left: 5%;
     margin-bottom: 5%;
     padding-right: 80px;
@@ -130,7 +130,6 @@ h1, h3 {
 
 .container-right {
     width: 300px;
-    /* height: 500px; */
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -139,6 +138,10 @@ h1, h3 {
 
 #profile-pic {
     width: 100%;
+}
+
+.projects-carousel-container {
+    padding: 4%;
 }
 
 .carousel {
@@ -172,7 +175,7 @@ h1, h3 {
   }
 
   .contact-method {
-    font-family: 'DotGothic16', sans-serif;
+    font-family: "Englebert", cursive;
     color: white;
   }
 
@@ -182,7 +185,7 @@ h1, h3 {
     flex-direction: column;
     align-items: center;
     width: 90%;
-    margin-left: 5%;
+    /* margin-left: 5%; */
 }
 
  .contact-form {
@@ -191,21 +194,26 @@ h1, h3 {
  }
 
  .mb-3 {
-    font-family: 'DotGothic16', sans-serif;
+    font-family: "Englebert", cursive;
     font-size: 25px;
     color: white;
  }
 
+ #contact-img {
+    width: 40%;
+    margin-top: 4%;
+ }
+
  #form-submit-btn {
     border: none;
-    font-family: 'DotGothic16', sans-serif;
+    font-family: "Englebert", cursive;
     font-size: 20px;
     background-color: rgb(0, 4, 126);
  }
 
  /* portfolio page */
  .portfolio-container {
-    background-image: url(../assets/background2.gif);
+    background-image: url(../assets/background3.gif);
     background-repeat: no-repeat;
     background-size: cover;
  }
@@ -242,8 +250,16 @@ h1, h3 {
     color: blue;
 }
 
- .bio-container, .experience-container {
-    padding: 8%;
+.bio-container {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url(../assets/background2.gif);
+}
+
+.experience-container {
+    padding: 8% 3%;
  }
 
 .badges-container {
@@ -259,6 +275,19 @@ h1, h3 {
     margin: 2%;
     font-size: 20px;
     background-color: black !important;
+ }
+
+#container-left {
+    width: 50%;
+}
+
+#container-right {
+    width: 50%;
+    padding: 5%;
+}
+
+ #about-img {
+    width: 60%;
  }
 
 

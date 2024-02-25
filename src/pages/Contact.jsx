@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import emailjs from '@emailjs/browser';
 import { validateEmail } from '../utils/helpers';
 import ContactLinks from '../components/ContactLinks';
+import contactPic from '../assets/contact-img.png';
 
 function Contact() {
     const [formState, setFormState] = useState({name: '', email: '', message: ''});
@@ -41,7 +43,7 @@ function Contact() {
 
   return (
     <section className="contact-container">
-        <br />
+        <img id="contact-img" src={contactPic} />
         <h1>Send me a message!</h1>
         <div className="contact-form">
             <Form>

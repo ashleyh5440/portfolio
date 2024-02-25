@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import Projects from '../components/Projects';
 import ContactLinks from '../components/ContactLinks';
-import profilePic from '../assets/profilepic.png';
+import profilePic from '../assets/home-img.png';
 
-function Home() {
+function Home() { 
     return (
         <section>
             <div className="intro">

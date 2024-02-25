@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import aboutPic from '../assets/about-img.png';
 import Badge from 'react-bootstrap/Badge';
 import 'animate.css';
 
@@ -6,8 +7,13 @@ function About() {
     return (
         <section className="about-section">
             <div className="bio-container">
-                <h1>About</h1>
+                <div id="container-left">
+                    <h1>About</h1>
+                    <img id="about-img" src={aboutPic} />
+                </div>
+                <div id="container-right">
                 <p>After being introduced to coding through a day job, I decided to jump feet-first into web development. I quickly became fascinated with the challenges and creativity that come with combining art and technology.</p>
+                </div>
             </div>
             <div className="experience-container">
                 <h1>Experience</h1>
