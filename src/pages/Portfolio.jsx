@@ -16,7 +16,7 @@ function Portfolio() {
         <section className="portfolio-container">
             <div id="portfolio-header"><h1>Portfolio</h1></div>
             <div>
-                <Container>
+                <Container className="group">
                     <Row>
                         <Col className="app">
                             <div className="app-title"><h3>Gods and Beasts</h3></div>
