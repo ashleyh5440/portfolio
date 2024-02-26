@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import Nav from './components/Nav';
 import { Outlet } from 'react-router-dom';
+import './styles/reset.css';
 import './styles/index.css';
+
 
 function App() {
   return (

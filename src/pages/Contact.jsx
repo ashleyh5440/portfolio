@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import 'animate.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import emailjs from '@emailjs/browser';
@@ -11,6 +12,10 @@ function Contact() {
     const {name, email, message} = formState;
 
     const [userMessage, setUserMessage] = useState('');
+
+    useEffect(() => {
+        emailjs.init("xQBDGz01GePOVKots");
+    }, []);
 
     const handleInputChange = (e) => {
         setFormState({
@@ -36,15 +41,22 @@ function Contact() {
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        setUserMessage("Email sent!");
-        setFormState({name: "", email: "", message: ""});
-        //email js package to send actual email
+        emailjs.send('service_jhx2cty', 'template_t9fklkg', {
+            from_name: name,
+            reply_to: email,
+            message: message,
+        }).then((response) => {
+            setUserMessage("Email sent!");
+            setFormState({name: '', email: '', message: ''});
+        }).catch((error) => {
+            setUserMessage("Error; please try again later.")
+        });
     };
 
   return (
     <section className="contact-container">
         <img id="contact-img" src={contactPic} />
-        <h1>Send me a message!</h1>
+        <h1 className="animate__animated animate__heartBeat animate__infinite">Send me a message!</h1>
         <div className="contact-form">
             <Form>
                 <Form.Group className="mb-3" controlId="contactForm.ControlInput1">

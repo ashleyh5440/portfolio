@@ -18,9 +18,9 @@ function Nav() {
                     <div id="collapseOne" className={`accordion-collapse collapse ${isOpen ? 'show' : ''}`} aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div className="accordion-body">
                             <div className="nav-left">
-                                <img id="github-logo" src="../src/assets/github.png" />
-                                <img id="gmail-logo" src="../src/assets/gmail.png" />
-                                <img id="linkedin-logo" src="../src/assets/linkedin.png" />
+                                <a href="https://github.com/ashleyh5440"><img id="github-logo" src="../src/assets/github.png" /></a>
+                                <a href="mailto:ashleyh5440@gmail.com"><img id="gmail-logo" src="../src/assets/gmail.png" /></a>
+                                <a href="https://www.linkedin.com/in/ashley-hill-63b209154/"><img id="linkedin-logo" src="../src/assets/linkedin.png" /></a>
                             </div>
                             <div className="nav-right">
                                 <button id="home-btn" onClick={toggleAccordion}><NavLink to='/' className={({ isActive }) => (isActive ? "text-white fs-3" :  'text-gray-300 hover:bg-gray-700 hover:text-white text-sm px-3')}>Home</NavLink></button>
