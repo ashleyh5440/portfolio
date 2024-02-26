@@ -326,5 +326,16 @@ p {
     background-color: rgb(0, 4, 126);
  }
 
+ /* footer */
+ .footer {
+    background-color: #aa25b1;
+    padding: 1%;
+    text-align: center;
+ }
+
+ .footer p {
+    font-size: 12px;
+ }
+
 
 

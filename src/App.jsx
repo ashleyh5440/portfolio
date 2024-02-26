@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Nav from './components/Nav';
+import Footer from './components/Footer'
 import { Outlet } from 'react-router-dom';
 import './styles/reset.css';
 import './styles/index.css';
@@ -10,6 +11,7 @@ function App() {
     <main>
       <Nav />
       <Outlet />
+      <Footer />
     </main>
   );
 }
