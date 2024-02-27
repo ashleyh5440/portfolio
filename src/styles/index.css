@@ -14,14 +14,20 @@ p {
  }
 
 /* nav */
+.accordion {
+    z-index: 100;
+}
 
+.accordion-header {
+    z-index: 102;
+}
 .accordion-item {
     position: relative;
     border: none;
 }
 
 .accordion-button {
-    z-index: 2;
+    z-index: 102;
 }
 
 .accordion-button:not(.collapsed) {
@@ -38,7 +44,7 @@ p {
     top: 100%; 
     left: 0;
     right: 0;
-    z-index: 1; 
+    z-index: 101; 
 }
 
 .accordion-body {
@@ -158,6 +164,10 @@ p {
     width: 50%;
     height: 60%;
     margin-left: 25%;
+  }
+
+  .hidden {
+    display: none;
   }
 
   .contact-links-container {
