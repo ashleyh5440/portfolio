@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Projects from '../components/Projects';
 import ContactLinks from '../components/ContactLinks';
 import profilePic from '../assets/home-img.png';
+import logo from '../assets/logo.png';
 
 function Home() { 
     return (
@@ -22,6 +23,7 @@ function Home() {
             </div>
             <div className="contact-links-container">
                 <h1>Contact Info</h1>
+                <img id="logo" src={logo} />
                 <ContactLinks />
             </div>
         </section>

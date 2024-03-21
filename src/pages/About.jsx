@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import aboutPic from '../assets/about-img.png';
+import logo from '../assets/logo.png';
 import Badge from 'react-bootstrap/Badge';
 import 'animate.css';
 
@@ -11,8 +12,9 @@ function About() {
                     <h1>About</h1>
                     <img className="animate__animated animate__slideInUp" id="about-img" src={aboutPic} />
                 </div>
-                <div className="animate__animated animate__rotateIn animate__delay-2s" id="container-right">
+                <div className="animate__animated animate__rotateIn animate__delay-2s" id="container-right" style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
                 <p>After being introduced to coding through a day job, I decided to jump feet-first into web development. I quickly became fascinated with the challenges and creativity that come with combining art and technology.</p>
+                <img id="logo2" src={logo} />
                 </div>
             </div>
             <div className="experience-container">

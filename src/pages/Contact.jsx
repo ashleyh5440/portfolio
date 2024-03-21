@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser';
 import { validateEmail } from '../utils/helpers';
 import ContactLinks from '../components/ContactLinks';
 import contactPic from '../assets/contact-img.png';
+import logo from '../assets/logo.png';
 
 function Contact() {
     const [formState, setFormState] = useState({name: '', email: '', message: ''});
@@ -76,7 +77,8 @@ function Contact() {
             </Form>
         </div>
         <h1>You can also get in touch with me through:</h1>
-        <div>
+        <div  style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+            <img id="logo" src={logo} />
             <ContactLinks />
         </div>
     </section>
