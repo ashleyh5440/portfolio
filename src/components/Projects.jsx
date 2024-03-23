@@ -6,7 +6,7 @@ import project2Img from '../assets/the-box-office-dojo.png';
 import project3Img from '../assets/coding-study-guide.png';
 import project4Img from '../assets/portfolio.png';
 import project5Img from '../assets/password-generator.png';
-import project6Img from '../assets/personal-calendar.png';
+import project6Img from '../assets/know-it-all.png';
 
 function Projects() {
   return (
@@ -42,9 +42,9 @@ function Projects() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <a href="https://ashleyh5440.github.io/personal-calendar"> <img className="carousel-image" src={project6Img} text="Sixth slide" /></a>
+        <a href="https://art-trivia-game.onrender.com/"> <img className="carousel-image" src={project6Img} text="Sixth slide" /></a>
         <Carousel.Caption>
-          <h3>Personal Calendar</h3>
+          <h3>Know It All</h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
