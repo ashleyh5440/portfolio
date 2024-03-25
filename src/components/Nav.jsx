@@ -23,17 +23,17 @@ function Nav({ toggleCarousel, carouselHidden }) {
                         <div className="accordion-body">
                             <div className="nav-left">
                                 <a href="https://github.com/ashleyh5440"><img id="github-logo" src={githubLogo} alt="GitHub" /></a>
-                                <a href="mailto:ashleyh5440@gmail.com"><img id="gmail-logo" src={gmailLogo} alt="Gmail" /></a>
+                                <a href="mailto:contact.ashleycreates@gmail.com"><img id="gmail-logo" src={gmailLogo} alt="Gmail" /></a>
                                 <a href="https://www.linkedin.com/in/ashley-hill-63b209154/"><img id="linkedin-logo" src={linkedinLogo} alt="LinkedIn" /></a>
                             </div>
                             <div className="nav-right">
-                                <button id="home-btn" onClick={toggleAccordion}><NavLink to='/' className={({ isActive }) => (isActive ? "text-white fs-3" :  'text-gray-300 hover:bg-gray-700 hover:text-white text-sm px-3')}>Home</NavLink></button>
+                                <button id="home-btn" onClick={toggleAccordion}><NavLink to='/' className={({ isActive }) => (isActive ? "text-gray-700" :  'text-white hover:bg-gray-700 hover:text-gray-700 text-sm px-3')}>Home</NavLink></button>
 
-                                <button id="about-btn" onClick={toggleAccordion}><NavLink to='/about' className={({ isActive }) => (isActive ? "text-white fs-3" :  'text-gray-300 hover:bg-gray-700 hover:text-white text-sm px-3')}>About</NavLink></button>
+                                <button id="about-btn" onClick={toggleAccordion}><NavLink to='/about' className={({ isActive }) => (isActive ? "text-gray-700" :  'text-white hover:bg-gray-700 hover:text-gray-700 text-sm px-3')}>About</NavLink></button>
 
-                                <button id="portfolio-btn" onClick={toggleAccordion}><NavLink to='/portfolio' className={({ isActive }) => (isActive ? "text-white fs-3" :  'text-gray-300 hover:bg-gray-700 hover:text-white text-sm px-3')}>Portfolio</NavLink></button>
+                                <button id="portfolio-btn" onClick={toggleAccordion}><NavLink to='/portfolio' className={({ isActive }) => (isActive ? "text-gray-700" :  'text-white hover:bg-gray-700 hover:text-gray-700 text-sm px-3')}>Portfolio</NavLink></button>
 
-                                <button id="resume-btn" onClick={toggleAccordion}><NavLink to='/contact' className={({ isActive }) => (isActive ? "text-white fs-3" :  'text-gray-300 hover:bg-gray-700 hover:text-white text-sm px-3')}>Contact</NavLink></button>
+                                <button id="resume-btn" onClick={toggleAccordion}><NavLink to='/contact' className={({ isActive }) => (isActive ? "text-gray-700" :  'text-white hover:bg-gray-700 hover:text-gray-700 text-sm px-3')}>Contact</NavLink></button>
                             </div>
                         </div>
                     </div>

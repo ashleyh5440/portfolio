@@ -5,7 +5,7 @@ function ContactLinks () {
         <section className="contact-links">
             <div className="link">
                 <h3>Email</h3> 
-                <p><a href = "mailto:ashleyh5440@gmail.com">ashleyh5440@gmail.com</a></p>
+                <p><a href = "mailto:contact.ashleycreates@gmail.com">contact.ashleycreates@gmail.com</a></p>
             </div>
             <div className="link">
                 <h3>GitHub</h3> 

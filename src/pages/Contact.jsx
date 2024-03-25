@@ -42,7 +42,7 @@ function Contact() {
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        emailjs.send('service_jhx2cty', 'template_t9fklkg', {
+        emailjs.send('service_xbf1n1r', 'template_t9fklkg', {
             from_name: name,
             reply_to: email,
             message: message,
