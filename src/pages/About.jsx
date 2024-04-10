@@ -30,7 +30,7 @@ function About() {
                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">SQL</Badge>
                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">MongoDB</Badge>
                 </div>
-                <p><a href="https://docs.google.com/document/d/1E_i5ZidIdzxLwg_h1SG0OUFw2ohQ1Ai-ghYQtK8gYmg/edit" target="_blank">View full resume →</a></p>
+                <p><a href="https://docs.google.com/document/d/1ER7rm1hEVcNOiQHMEoPVYly3SFkebmBtu8tABmlulEM/edit" target="_blank">View full resume →</a></p>
             </div>
         </section>
     )
