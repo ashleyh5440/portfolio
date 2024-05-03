@@ -1,8 +1,6 @@
-import { useState } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
+
 
 import project1Img from '../assets/gods-and-beasts.png';
 import project2Img from '../assets/the-box-office-dojo.png';
@@ -10,6 +8,8 @@ import project3Img from '../assets/coding-study-guide.png';
 import project4Img from '../assets/portfolio.png';
 import project5Img from '../assets/password-generator.png';
 import project6Img from '../assets/know-it-all.png';
+
+
 
 function Portfolio() {
     return (

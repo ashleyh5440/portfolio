@@ -18,17 +18,22 @@ function About() {
                 </div>
             </div>
             <div className="experience-container">
-                <h1>Experience</h1>
+                <h1>Technical Skills</h1>
                 <div className="badges-container">
                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">HTML</Badge>
                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">CSS</Badge>
+                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Bulma CSS</Badge>
+                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Bootstap</Badge>
                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">JavaScript</Badge>
+                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">jQuery</Badge>
                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">React</Badge>
                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Handlebars</Badge>
                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Node.js</Badge>
                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Express.js</Badge>
                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">SQL</Badge>
                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">MongoDB</Badge>
+                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">RESTful APIs</Badge>
+                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">UI/UX Design</Badge>
                 </div>
                 <p><a href="https://docs.google.com/document/d/1ER7rm1hEVcNOiQHMEoPVYly3SFkebmBtu8tABmlulEM/edit" target="_blank">View full resume →</a></p>
             </div>

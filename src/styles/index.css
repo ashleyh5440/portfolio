@@ -266,9 +266,8 @@ p {
 
  /* portfolio page */
  .portfolio {
-    background-image: url(../assets/background3.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(rgb(0, 4, 126), #aa25b1, rgb(0, 4, 126));
+    position: relative;
  }
 
  .projects-container {
