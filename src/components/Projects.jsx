@@ -4,7 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import project1Img from '../assets/gods-and-beasts.png';
 import project2Img from '../assets/the-box-office-dojo.png';
 import project3Img from '../assets/coding-study-guide.png';
-import project4Img from '../assets/portfolio.png';
+import project4Img from '../assets/nhakbar.png';
 import project5Img from '../assets/password-generator.png';
 import project6Img from '../assets/know-it-all.png';
 
@@ -30,9 +30,9 @@ function Projects() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <a href="https://ashleyh5440.github.io/pro-portfolio/"><img className="carousel-image" src={project4Img} text="Fourth slide" /></a>
+        <a href="https://nhakbar.netlify.app/"><img className="carousel-image" src={project4Img} text="Fourth slide" /></a>
         <Carousel.Caption>
-          <h3>Mock Portfolio</h3>
+          <h3>NH Akbar</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
