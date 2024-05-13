@@ -23,7 +23,7 @@ function About() {
                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">HTML</Badge>
                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">CSS</Badge>
                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Bulma CSS</Badge>
-                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Bootstap</Badge>
+                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Bootstrap</Badge>
                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">JavaScript</Badge>
                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">jQuery</Badge>
                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">React</Badge>
