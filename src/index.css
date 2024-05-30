@@ -1,0 +1,276 @@
+html, body, div {
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./assets/home-background.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: "Englebert", cursive;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+.box {
+  margin: 0;
+  padding: 0%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.badges-container {
+  width: 98%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.badge {
+  width: 18%;
+  padding: 0% 1%;
+  margin: 3%;
+  font-size: 60%;
+  text-align: center;
+  background-color: rgb(255, 78, 166) !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel, .slide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-inner {
+  width: 80%;
+}
+
+.carousel-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.carousel-image {
+  width: 50%;
+  height: 60%;
+  margin-left: 25%;
+  margin-bottom: 300px;
+}
+
+.description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 15px;
+  padding-bottom: 2%;
+}
+
+.description Button {
+  background-color: rgb(12, 166, 221);
+  border: none;
+  font-family: "Englebert", cursive;
+  font-size: 20px;
+  margin-top: 20px;
+  width: 30%;
+}
+
+.description Button:hover {
+  background-color: rgb(7, 129, 173);
+   transform: scale(1.1);
+   animation: tada;
+    animation-duration: 1s;
+}
+
+.experience-container {
+  padding: 8% 3%;
+}
+
+.contact-icon {
+  width: 15%;
+}
+
+.contact-icon:hover {
+  animation: swing;
+  animation-duration: 1s;
+}
+
+.contact-icon img {
+  width: 100%;
+}
+
+.top-border {
+  width: 100%;
+  background-color: rgb(128, 121, 255);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about {
+  background-color: rgba(0, 0, 0, 0.333);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin: 0%;
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+#left img {
+  width: 90%;
+}
+
+#right {
+  margin-top: 80px;
+  margin-right: 3%;
+  color: white;
+  font-size: 25px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.333);
+  margin: 0%;
+  padding: 0%;
+}
+
+#contact {
+  margin: 0;
+  padding: 0;
+}
+
+#icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 1024px) {
+  .badge {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .badge {
+    padding: 3% 13%;
+  }
+
+  .carousel-image {
+    margin-bottom: 340px;
+  }
+
+  .description Button {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .badge {
+    padding: 5% 15%;
+  }
+
+  #about {
+    flex-direction: column;
+  }
+
+  #left {
+    order: 2;
+  }
+
+  #right {
+    order: 1;
+  }
+
+  .carousel-inner {
+    width: 100%;
+  }
+  
+  .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 0%;
+  }
+  
+  .carousel-image {
+    width: 95%;
+    margin-left: 5%;
+    margin-bottom: 430px;
+  }
+  
+  .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .description Button {
+    width: 100%;
+  }
+}
+

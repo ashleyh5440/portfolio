@@ -1,46 +1,22 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import githubLogo from '../assets/github.png';
-import gmailLogo from '../assets/gmail.png';
-import linkedinLogo from '../assets/linkedin.png';
+import React from 'react';
+import 'animate.css';
+import logo from '../assets/logo.png';
+import { Link } from 'react-scroll';
+import './navfooter.css';
 
-function Nav({ toggleCarousel, carouselHidden }) {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleAccordion = () => {
-        setIsOpen(!isOpen);
-        toggleCarousel(!isOpen);
-    };
-
-    return(
-        <section>
-            <div className={`accordion ${isOpen ? 'expanded' : ''}`} id="accordionExample">
-                <div className="accordion-item">
-                    <h2 className="accordion-header" id="headingOne">
-                        <button className="accordion-button" type="button" onClick={toggleAccordion} aria-expanded={isOpen ? "true" : "false"} aria-controls="collapseOne">A</button>
-                    </h2>
-                    <div id="collapseOne" className={`accordion-collapse collapse ${isOpen ? 'show' : ''}`} aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div className="accordion-body">
-                            <div className="nav-left">
-                                <a href="https://github.com/ashleyh5440"><img id="github-logo" src={githubLogo} alt="GitHub" /></a>
-                                <a href="mailto:contact.ashleycreates@gmail.com"><img id="gmail-logo" src={gmailLogo} alt="Gmail" /></a>
-                                <a href="https://www.linkedin.com/in/ashley-hill-63b209154/"><img id="linkedin-logo" src={linkedinLogo} alt="LinkedIn" /></a>
-                            </div>
-                            <div className="nav-right">
-                                <button id="home-btn" onClick={toggleAccordion}><NavLink to='/' className={({ isActive }) => (isActive ? "text-gray-700" :  'text-white hover:bg-gray-700 hover:text-gray-700 text-sm px-3')}>Home</NavLink></button>
-
-                                <button id="about-btn" onClick={toggleAccordion}><NavLink to='/about' className={({ isActive }) => (isActive ? "text-gray-700" :  'text-white hover:bg-gray-700 hover:text-gray-700 text-sm px-3')}>About</NavLink></button>
-
-                                <button id="portfolio-btn" onClick={toggleAccordion}><NavLink to='/portfolio' className={({ isActive }) => (isActive ? "text-gray-700" :  'text-white hover:bg-gray-700 hover:text-gray-700 text-sm px-3')}>Portfolio</NavLink></button>
-
-                                <button id="resume-btn" onClick={toggleAccordion}><NavLink to='/contact' className={({ isActive }) => (isActive ? "text-gray-700" :  'text-white hover:bg-gray-700 hover:text-gray-700 text-sm px-3')}>Contact</NavLink></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+function Nav() {
+    return (
+        <section className="navbar">
+            <div id="logo">
+                <img src={logo} alt="logo" />
+            </div>
+            <div id="links">
+                <Link to="about" smooth={true} duration={500}><p>About</p></Link>
+                <Link to="portfolio" smooth={true} duration={500}><p>Portfolio</p></Link>
+                <Link to="contact" smooth={true} duration={500}><p>Contact</p></Link>
             </div>
         </section>
     );
-};
+}
 
 export default Nav;
