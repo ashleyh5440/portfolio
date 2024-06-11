@@ -51,7 +51,7 @@ function Home() {
     // })
     return (
         <section>
-            <div>
+            <div id="top">
             <Row style={{ height: "100vh", display: "flex",  flexDirection:"column", justifyContent: "center", alignItems: "center", textAlign: "center"}}>
                 <h1>Ashley Hill</h1> 
                 <img id="logo-img" src={logo} />
