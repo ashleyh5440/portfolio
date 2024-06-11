@@ -54,36 +54,41 @@ function Home() {
             <div>
             <Row style={{ height: "100vh", display: "flex",  flexDirection:"column", justifyContent: "center", alignItems: "center", textAlign: "center"}}>
                 <h1>Ashley Hill</h1> 
-                <img style={{width: "15%", marginTop: "40px"}}src={logo} />
+                <img id="logo-img" src={logo} />
             </Row>
             </div>
-
             <div className='box'>
                 <Row id="about">
                 <div className="top-border">
                     <h1>About</h1>
                 </div>
-                    <p style={{marginTop: "70px"}}>After being introduced to coding through a day job, I decided to jump feet-first into web development. I quickly  became fascinated with the challenges and creativity that come with combining art and technology.</p>
+                    <p style={{paddingTop: "15%"}}>After being introduced to coding through a day job, I decided to jump feet-first into web development. I quickly  became fascinated with the challenges and creativity that come with combining art and technology.</p>
                 <Col id="left">
                     <img src={bioPic} />
                 </Col>
                 <Col id="right">
                     <h2 style={{marginTop: "5%"}}>Technical Skills</h2>
                         <div className="badges-container">
-                        <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">HTML</Badge>
-                        <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">CSS</Badge>
-                        <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Bulma CSS</Badge>
-                        <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Bootstrap</Badge>
-                        <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">JavaScript</Badge>
-                        <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">jQuery</Badge>
-                        <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">React</Badge>
-                        <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Handlebars</Badge>
-                        <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Node.js</Badge>
-                        <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Express.js</Badge>
-                        <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">SQL</Badge>
-                        <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">MongoDB</Badge>
-                        <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">RESTful APIs</Badge>
-                        <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">UI/UX Design</Badge>
+                            <div className="badge-box">
+                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">HTML</Badge>
+                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">CSS</Badge>
+                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Bulma CSS</Badge>
+                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Bootstrap</Badge>
+                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">JavaScript</Badge>
+                            </div>
+                            <div className="badge-box">
+                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">jQuery</Badge>
+                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">React</Badge>
+                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Handlebars</Badge>
+                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Node.js</Badge>
+                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Express.js</Badge>
+                            </div>
+                            <div className="badge-box">
+                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">SQL</Badge>
+                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">MongoDB</Badge>
+                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">RESTful APIs</Badge>
+                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">UI/UX Design</Badge>
+                            </div>
                         </div>
                 <p style={{marginTop: "3%"}}><a href="https://docs.google.com/document/d/1ER7rm1hEVcNOiQHMEoPVYly3SFkebmBtu8tABmlulEM/edit" target="_blank">View full resume →</a></p>
                 </Col>
