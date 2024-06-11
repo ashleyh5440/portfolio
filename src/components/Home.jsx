@@ -159,7 +159,7 @@ function Home() {
                                 <div className="description">
                                     <p>Test your smarts with this comprehensive trivia game.</p> 
                                     <a href="https://github.com/ashleyh5440/art-trivia-game"><Button variant="primary">View on GitHub</Button></a>
-                                    <a href="https://art-trivia-game.onrender.com/"><Button variant="primary">Visit site</Button></a>
+                                    <a href="https://know-it-all-trivia.netlify.app/"><Button variant="primary">Visit site</Button></a>
                                 </div>
                             </Carousel.Caption>
                         </Carousel.Item>
