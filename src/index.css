@@ -228,6 +228,11 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  body {
+    background-color: #e5a7ff;
+    background-image: linear-gradient(#e5a7ff, rgb(254, 168, 128), rgb(236, 163, 211))
+  }
+  
   .badge {
     padding: 3% 13%;
   }
@@ -238,6 +243,16 @@ h1 {
 
   .description Button {
     width: 50%;
+  }
+
+  #top {
+    background-image: url(./assets/home-background.gif);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+  }
+
+  #about, #portfolio {
+    background-color: transparent;
   }
 }
 
