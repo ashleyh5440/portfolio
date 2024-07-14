@@ -108,8 +108,8 @@ function Home() {
                                 <h3>Gods and Beasts</h3>
                                 <div className="description">
                                     <p>With characters based off global mythology, users can play an online card game against the computer.</p> 
-                                    <a href="https://github.com/ashleyh5440/gods-beasts-game" target="_blank"><Button variant="primary">View on GitHub</Button></a>
-                                    <a href="https://gods-and-beasts-game-15c8c3fec868.herokuapp.com/" target="_blank"><Button variant="primary">Visit site</Button></a>
+                                    {/* <a href="https://github.com/ashleyh5440/gods-beasts-game" target="_blank"><Button variant="primary">View on GitHub</Button></a> */}
+                                    <a href="https://gods-and-beasts.onrender.com/" target="_blank"><Button variant="primary">Visit site</Button></a>
                                 </div>
                             </Carousel.Caption>
                         </Carousel.Item>
@@ -135,7 +135,7 @@ function Home() {
                                 </div>
                             </Carousel.Caption>
                         </Carousel.Item>
-                        <Carousel.Item>
+                        {/* <Carousel.Item>
                             <img className="carousel-image" src={project4Img} text="Fourth slide" />
                             <Carousel.Caption>
                                 <h3>NH Akbar</h3>
@@ -145,7 +145,7 @@ function Home() {
                                     <a href="https://nhakbar.netlify.app/"><Button variant="primary">Visit site</Button></a>
                                 </div>
                             </Carousel.Caption>
-                        </Carousel.Item>
+                        </Carousel.Item> */}
                         <Carousel.Item>
                             <a href="https://ashleyh5440.github.io/password-generator/"><img className="carousel-image" src={project5Img} text="Fifth slide" /></a>
                             <Carousel.Caption>
