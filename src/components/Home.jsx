@@ -99,12 +99,10 @@ function Home() {
                         <h1>About</h1>
                     </div>
                     <Row id="about">
-                        <Col style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end"}}>
-                            <div className="bio-pic-container">
-                                <img src={bioPic} />
-                            </div>
+                        <Col className="bio-pic-container">
+                            <img src={bioPic} />
                         </Col>
-                        <Col style={{overflowY: "hidden"}}>
+                        <Col>
                             <p style={{padding: "60px 20px"}}>After being introduced to coding through a day job, I decided to jump feet-first into web development. I quickly  became fascinated with the challenges and creativity that come with combining art and technology.</p>
                             <div className="badges-container">
                                 <h2>Technical Skills</h2>
@@ -114,15 +112,11 @@ function Home() {
                                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Bulma CSS</Badge>
                                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Bootstrap</Badge>
                                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">JavaScript</Badge>
-                                </div>
-                                <div className="badge-box">
                                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">jQuery</Badge>
                                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">React</Badge>
                                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Handlebars</Badge>
                                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Node.js</Badge>
                                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Express.js</Badge>
-                                </div>
-                                <div className="badge-box">
                                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">SQL</Badge>
                                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">MongoDB</Badge>
                                     <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">RESTful APIs</Badge>
