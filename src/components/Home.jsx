@@ -148,6 +148,16 @@ function Home() {
                                     </div>
                                 </Carousel.Item>
                                 <Carousel.Item>
+                                    <div className="project-img" id="project7">
+                                    </div>
+                                    <div className="project-description">
+                                        <h3>Elsewhere Emporium</h3>
+                                        <p>Online fantasy magic shop.</p>
+                                        <a href="https://github.com/ashleyh5440/elsewhere-emporium" target="_blank"><Button variant="primary">View on GitHub</Button></a>
+                                        <a href="https://elsewhere-emporium.netlify.app/" target="_blank"><Button variant="primary">Visit site</Button></a>
+                                    </div>
+                                </Carousel.Item>
+                                <Carousel.Item>
                                     <div className="project-img" id="project2">
                                     </div>
                                     <div className="project-description">

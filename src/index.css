@@ -224,7 +224,7 @@ li {
   align-items: center;
 }
 
-#project1, #project2, #project3, #project4, #project5, #project6 {
+#project1, #project2, #project3, #project4, #project5, #project6, #project7 {
   background-repeat: no-repeat;
   background-size: 100%;
 } 
@@ -252,6 +252,10 @@ li {
 
 #project6 {
   background-image: url(./assets/hangman.png);
+}
+
+#project7 {
+  background-image: url(./assets/elsewhere.png);
 }
  
 #contact {
