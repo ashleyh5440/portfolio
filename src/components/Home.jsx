@@ -4,12 +4,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Badge from 'react-bootstrap/Badge';
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
+import Nav from 'react-bootstrap/Nav';
+import Tab from 'react-bootstrap/Tab';
 
 import bioPic from '../assets/about-img.png';
 
@@ -34,8 +35,8 @@ function Home() {
             gsap.to(container, {
                 scrollTrigger: {
                     trigger: container,
-                    start: '2px 100%',
-                    end: 'bottom',
+                    start: '2px 100%', 
+                    end: 'bottom', 
                     toggleActions: 'play reverse play reverse', 
                 },
                 opacity: 1,
@@ -91,6 +92,8 @@ function Home() {
                     <Row style={{ height: "100vh", display: "flex",  flexDirection:"column", justifyContent: "center", alignItems: "center", textAlign: "center"}}>
                         <h1>Ashley Hill</h1> 
                         <img id="logo-img" src={logo} />
+                        <br />
+                        <p style={{fontFamily: "Englebert, cursive", fontSize: "17px"}}>Web developer and wordsmith</p>
                     </Row>
                 </div>
 
@@ -102,25 +105,74 @@ function Home() {
                             <img src={bioPic} />
                         </Col>
                         <Col>
-                            <p style={{padding: "60px 20px"}}>After being introduced to coding through a day job, I decided to jump feet-first into web development. I quickly  became fascinated with the challenges and creativity that come with combining art and technology.</p>
-                            <div className="badges-container">
-                                <h2>Technical Skills</h2>
-                                <div className="badge-box">
-                                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">HTML</Badge>
-                                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">CSS</Badge>
-                                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Bulma CSS</Badge>
-                                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Bootstrap</Badge>
-                                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">JavaScript</Badge>
-                                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">jQuery</Badge>
-                                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">React</Badge>
-                                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Handlebars</Badge>
-                                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Node.js</Badge>
-                                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Express.js</Badge>
-                                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">SQL</Badge>
-                                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">MongoDB</Badge>
-                                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">RESTful APIs</Badge>
-                                    <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">UI/UX Design</Badge>
-                                </div>
+                            <p style={{padding: "60px 20px", lineHeight: "1.6"}}>
+                            I blend creativity with code to create websites that not only look great but also tell your story in a way that resonates with audiences. I help people and businesses establish their unique voice, craft web content and copy, and combine art and technology to build intuitive, user-friendly sites that engage visitors and drive results. </p>
+                            <div>
+                                <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+                                    <Row className="skills-box">
+                                        <Col sm={3}>
+                                            <Nav variant="pills" className="flex-column">
+                                                <Nav.Item>
+                                                    <Nav.Link eventKey="first">Web Development</Nav.Link>
+                                                </Nav.Item>
+                                                <Nav.Item>
+                                                    <Nav.Link eventKey="second">Writing</Nav.Link>
+                                                </Nav.Item>
+                                            </Nav>
+                                        </Col>
+                                        <Col sm={9}>
+                                            <Tab.Content>
+                                                <Tab.Pane eventKey="first">
+                                                    {/* <ul>
+                                                        <li>HTML</li>
+                                                        <li>Handlebars</li>
+                                                        <li>CSS</li>
+                                                        <li>Bootstrap</li>
+                                                        <li>Bulma</li>
+                                                        <li>JavaScript</li>
+                                                        <li>React</li>
+                                                        <li>jQuery</li>
+                                                        <li>Node.js</li>
+                                                        <li>Express.js</li>
+                                                        <li>SQL</li>
+                                                        <li>MongoDB</li>
+                                                        <li>RESTful APIs</li>
+                                                        <li>UI/UX Design</li>
+                                                    </ul> */}
+                                                        <div className="badge-box">
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">HTML</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">CSS</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Bulma CSS</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Bootstrap</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">JavaScript</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">jQuery</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">React</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Handlebars</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Node.js</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Express.js</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">SQL</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">MongoDB</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">RESTful APIs</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">UI/UX Design</Badge>
+                                                        </div>
+                                                </Tab.Pane>
+                                                <Tab.Pane eventKey="second">
+                                                        <div className="wri-badge-box">
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Web Content</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Ad Copy</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Email Marketing</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Social Media Posts</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Content Editing</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Proofreading</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Mission Statements</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Brand Development</Badge>
+                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Taglines</Badge>
+                                                        </div>
+                                                </Tab.Pane>
+                                            </Tab.Content>
+                                        </Col>
+                                    </Row>
+                                </Tab.Container>
                             </div>
                         </Col>
                         </Row>
@@ -138,7 +190,8 @@ function Home() {
                                     </div>
                                     <div className="project-description">
                                         <h3>Gods and Beast</h3>
-                                        <p>Mythology card game.</p>
+                                        <p>Mythology card game.<br />
+                                        Created with MongoDB, Express.js, React, Node.js, CSS</p>
                                         <a href="https://gods-and-beasts.onrender.com/" target="_blank"><Button variant="primary">Visit site</Button></a>
                                     </div>
                                 </Carousel.Item>
@@ -147,9 +200,9 @@ function Home() {
                                     </div>
                                     <div className="project-description">
                                         <h3>Elsewhere Emporium</h3>
-                                        <p>Online fantasy magic shop.</p>
+                                        <p>Online fantasy magic shop.<br />
+                                        Created with React, CSS</p>
                                         <a href="https://github.com/ashleyh5440/elsewhere-emporium" target="_blank"><Button variant="primary">View on GitHub</Button></a>
-                                        <a href="https://elsewhere-emporium.netlify.app/" target="_blank"><Button variant="primary">Visit site</Button></a>
                                     </div>
                                 </Carousel.Item>
                                 <Carousel.Item>
@@ -157,9 +210,9 @@ function Home() {
                                     </div>
                                     <div className="project-description">
                                         <h3>The Box Office Dojo</h3>
-                                        <p>The perfect place to curate your own personal movie watch list.</p>
+                                        <p>The perfect place to curate your own personal movie watch list.<br />
+                                        Created with HTML, CSS, JavaScript</p>
                                         <a href="https://github.com/ashleyh5440/box-office-dojo" target="_blank"><Button variant="primary">View on GitHub</Button></a>
-                                        <a href="https://ashleyh5440.github.io/box-office-dojo/" target="_blank"><Button variant="primary">Visit site</Button></a>
                                     </div>
                                 </Carousel.Item>
                                 <Carousel.Item>
@@ -167,9 +220,9 @@ function Home() {
                                     </div>
                                     <div className="project-description">
                                         <h3>Coding Study Guide</h3>
-                                        <p>Coding information, resources, and tips all in one place.</p>
+                                        <p>Coding information, resources, and tips all in one place.<br />
+                                        Created with HTML, CSS, JavaScript</p>
                                         <a href="https://github.com/ashleyh5440/new-prework-study-guide" target="_blank"><Button variant="primary">View on GitHub</Button></a>
-                                        <a href="https://ashleyh5440.github.io/new-prework-study-guide/" target="_blank"><Button variant="primary">Visit site</Button></a>
                                     </div>
                                 </Carousel.Item>
                                 <Carousel.Item>
@@ -177,9 +230,10 @@ function Home() {
                                     </div>
                                     <div className="project-description">
                                         <h3>Password Generator</h3>
-                                        <p>Generate a secure random password.</p>
+                                        <p>Generate a secure random password.<br />
+                                        Created with HTML, CSS, JavaScript</p>
                                         <a href="https://github.com/ashleyh5440/password-generator" target="_blank"><Button variant="primary">View on GitHub</Button></a>
-                                        <a href="https://ashleyh5440.github.io/password-generator/" target="_blank"><Button variant="primary">Visit site</Button></a>
+
                                     </div>
                                 </Carousel.Item>
                                 <Carousel.Item>
@@ -187,9 +241,9 @@ function Home() {
                                     </div>
                                     <div className="project-description">
                                         <h3>Know It All</h3>
-                                        <p>Test your smarts with this comprehensive trivia game.</p>
+                                        <p>Test your smarts with this comprehensive trivia game.<br />
+                                        Created with React, Node.js, CSS</p>
                                         <a href="https://github.com/ashleyh5440/know-it-all" target="_blank"><Button variant="primary">View on GitHub</Button></a>
-                                        <a href="https://know-it-all-trivia.netlify.app/" target="_blank"><Button variant="primary">Visit site</Button></a>
                                     </div>
                                 </Carousel.Item>
                                 <Carousel.Item>
@@ -197,9 +251,9 @@ function Home() {
                                     </div>
                                     <div className="project-description">
                                         <h3>Halloween Hangman</h3>
-                                        <p>Escape the noose by guessing the correct word in the Halloween-themed hangman game.</p>
-                                        <a href="https://github.com/ashleyh5440/hangman" target="_blank"><Button variant="primary">Visit site</Button></a>
-                                        <a href="https://ashleyh5440.github.io/hangman/" target="_blank"><Button variant="primary">Visit site</Button></a>
+                                        <p>Escape the noose by guessing the correct word in the Halloween-themed hangman game.<br />
+                                        Created with HTML, CSS, JavaScript</p>
+                                        <a href="https://github.com/ashleyh5440/hangman" target="_blank"><Button variant="primary">View on GitHub</Button></a>
                                     </div>
                                 </Carousel.Item>
                         </Carousel>

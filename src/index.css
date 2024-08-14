@@ -85,7 +85,6 @@ li {
 }
 
 .bio-pic-container {
-  /* width: 80%; */
   width: 300px;
   height: 100%;
   display: flex;
@@ -95,32 +94,99 @@ li {
 }
 
 .bio-pic-container img {
-  width: 70%;
+  width: 90%;
 }
 
-.badges-container {
-  width: 98%;
-  height: 400px;
+.skills-box {
+  width: 45%;
+  height: 420px;
 }
 
-.badge-box {
+.col-sm-3 {
+  width: 100%;
+}
+
+.skills-box::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-pills {
   width: 100%;
   display: flex;
+  flex-direction: row !important;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  width: 255px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-link, .nav-link .active {
+  background-color: rgb(50, 0, 80) !important;
+  width: 100%;
+  color: white;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.col-sm-9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 65%;
+  margin-top: 15px;
+}
+
+.tab-content {
+  width: 90%;
+  height: 100%;
+}
+
+.tab-pane::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-pane {
+  width: 100%;
+  height: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.badge-box, .wri-badge-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   overflow: visible;
 }
 
-.badge-box .badge {
-  width: 18%;
-  padding: 10px 50px;
+.badge-box .badge, .wri-badge-box .badge {
+  width: 20%;
+  padding: 10px 70px;
   margin: 8px;
-  font-size: 60%;
+  font-size: 20px;
   text-align: center;
   background-color: rgb(27, 4, 45) !important;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.wri-badge-box .badge {
+  width: 30%;
+  padding: 10px 100px;
 }
 
 .carousel { 
@@ -156,6 +222,7 @@ li {
   flex-direction: column;
   align-items: center;
   overflow-y: hidden;
+  line-height: 1.6;
 }
 
 .project-description button {
@@ -211,6 +278,7 @@ li {
   text-align: center;
   margin: 0%;
   height: 100vh;
+  overflow: hidden;
 }
 
 #portfolio {
@@ -285,6 +353,11 @@ li {
     background-color: rgb(20, 20, 64);
     background-image: none;
   }
+
+  .skills-box {
+    width: 95%;
+  }
+
   .carousel {
     width: 500px;
   }
@@ -309,6 +382,10 @@ li {
     width: 100%;
     height: 200px !important;
     overflow: hidden;
+  }
+
+  .bio-pic-container img {
+    width: 70%;
   }
 
   #about {
