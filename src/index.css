@@ -13,13 +13,7 @@ section {
 }
 
 body {
-  /* background-image: url(./assets/sky.jpeg);
-  background-repeat: no-repeat;
-  background-size: 2000px 2000px; */
-  background-color: #0a0244;
-  background-image: linear-gradient(to bottom, #201c2f 30%, #0a0244 100%);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgb(20, 20, 64);
 }
 
 h1 {
@@ -402,10 +396,6 @@ li {
 }
 
 @media (max-width: 768px) {
-  body {
-    background-color: rgb(20, 20, 64);
-  }
-
   .skills-box {
     width: 95%;
   }
