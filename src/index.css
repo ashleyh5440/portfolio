@@ -13,17 +13,20 @@ section {
 }
 
 body {
-  background-image: url(./assets/sky.jpeg);
+  /* background-image: url(./assets/sky.jpeg);
   background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-  background-attachment: fixed !important;
+  background-size: 2000px 2000px; */
+  background-color: #0a0244;
+  background-image: linear-gradient(to bottom, #201c2f 30%, #0a0244 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
-  font-family: "Englebert", cursive;
+  font-family: "Birthstone", cursive;
   color: white;
   text-align: center;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 p, h3 {
@@ -79,7 +82,7 @@ li {
 
 .top-border {
   width: 100vw;
-  height: 65px;
+  height: 85px;
   background-color: rgb(3, 3, 54);
   overflow: hidden;
 }
@@ -100,6 +103,7 @@ li {
 .skills-box {
   width: 45%;
   height: 420px;
+  overflow-y: scroll;
 }
 
 .col-sm-3 {
@@ -127,7 +131,7 @@ li {
 }
 
 .nav-link, .nav-link .active {
-  background-color: rgb(50, 0, 80) !important;
+  background-color: rgb(91, 17, 135) !important;
   width: 100%;
   color: white;
 }
@@ -189,19 +193,34 @@ li {
   padding: 10px 100px;
 }
 
-.carousel { 
-  width: 600px;
-  padding-top: 6%;
-  overflow: hidden;
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  margin: 0%;
+  padding: 0%;
+  height: 100vh;
 }
 
-.carousel-indicators {
+.carousel { 
+  width: 100%;
+  padding-top: 6%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-inner {
+  width: 480px;
+  height: 510px;
+}
+
+.carousel-indicators, .carousel-control-next, .carousel-control-prev {
   display: none;
 }
 
 .carousel-item {
-  width: 600px;
-  height: 620px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -211,7 +230,7 @@ li {
 
 .project-img {
   width: 100%;
-  height: 400px;
+  height: 320px;
   margin-bottom: 4%;
 }
 
@@ -225,20 +244,44 @@ li {
   line-height: 1.6;
 }
 
+.project-description p {
+  font-size: 15px;
+}
+
 .project-description button {
-  background-color: rgb(27, 4, 45);
+  background-color: rgb(91, 17, 135);
   border: none;
-  font-family: "Englebert", cursive;
-  font-size: 18px;
-  margin-top: 14px;
+  font-family: "Birthstone", cursive;
+  font-size: 25px;
+  margin-top: 10px;
   width: 30%;
 }
 
-.project-description button:hover {
-  background-color: rgb(4, 1, 6);
+.project-description button:hover, .project-description button:active, .project-description button:focus {
+  background-color: rgb(62, 11, 91) !important;
   transform: scale(1.1);
   animation: tada;
   animation-duration: 1s;
+}
+
+.contol-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.contol-btns button {
+  width: 100px;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.066);
+  border: none;
+  margin: 0% 20%;
+}
+
+.contol-btns button:hover, .contol-btns button:focus, .contol-btns button:active {
+  background-color: rgb(0, 0, 67) !important;
 }
 
 .experience-container {
@@ -281,30 +324,24 @@ li {
   overflow: hidden;
 }
 
-#portfolio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0%;
-  padding: 0%;
-  height: 100vh;
+#left-tabs-example {
+  border: 2px solid green;
 }
 
-#portfolio .col {
-  width: 70%;
-  display: flex;
+#carousel-box {
   flex-direction: column;
-  align-items: center;
+  align-items: center !important;
+  justify-content: center;
+  height: 90%;
 }
 
-#project1, #project2, #project3, #project4, #project5, #project6, #project7 {
+#project1, #project2, #project3, #project4, #project5, #project6, #project7, #project8, #project9, #project10, #project11 {
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 } 
 
 #project1 {
   background-image: url(./assets/gods-and-beasts.png);
-  background-size: cover;
 }
 
 #project2 {
@@ -330,6 +367,22 @@ li {
 #project7 {
   background-image: url(./assets/elsewhere.png);
 }
+
+#project8 {
+  background-image: url(./assets/theme-guide.png);
+}
+
+#project9 {
+  background-image: url(./assets/page-mag.png);
+}
+
+#project10 {
+  background-image: url(./assets/bu-wales.png);
+}
+
+#project11 {
+  background-image: url(./assets/script-ex.png);
+}
  
 #contact {
   margin: 0;
@@ -351,27 +404,10 @@ li {
 @media (max-width: 768px) {
   body {
     background-color: rgb(20, 20, 64);
-    background-image: none;
   }
 
   .skills-box {
     width: 95%;
-  }
-
-  .carousel {
-    width: 500px;
-  }
-
-  .carousel-item {
-    width: 490px;
-  }
-
-  .project-img {
-    height: 330px;
-  }
-
-  .project-description button {
-    width: 60%
   }
 
   .badges-container {
@@ -394,20 +430,22 @@ li {
 }
 
 @media (max-width: 500px) {
-  .carousel {
+
+  .portfolio {
+    overflow: hidden;
+  }
+
+  .carousel-inner {
     width: 310px;
+    height: 100%;
   }
 
-  .carousel-item {
-    width: 308px;
-  }
-
-  .project-img {
-    height: 230px;
+  .carousel, .carousel-item {
+    height: 545px;
   }
 
   .project-description button {
-    width: 90%
+    width: 60%
   }
 }
 

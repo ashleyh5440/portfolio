@@ -79,6 +79,20 @@ function Home() {
             }
         };
     }, []);
+
+    // for portfolio carousels
+    const carouselRef = useRef(null);
+
+    const prevBtn = () => {
+        carouselRef.current.prev();
+    }
+
+    const nextBtn = () => {
+        carouselRef.current.next(); 
+    }
+
+
+
     return (
         <section>
             <div className="fireflies-container" ref={fireFliesContainerRef}>
@@ -93,7 +107,7 @@ function Home() {
                         <h1>Ashley Hill</h1> 
                         <img id="logo-img" src={logo} />
                         <br />
-                        <p style={{fontFamily: "Englebert, cursive", fontSize: "17px"}}>Web developer and wordsmith</p>
+                        <p style={{fontFamily: "Birthstone, cursive", fontSize: "32px"}}>Web developer and wordsmith</p>
                     </Row>
                 </div>
 
@@ -177,14 +191,14 @@ function Home() {
                         </Col>
                         </Row>
                         </div>
-
+                        {/* portfolio section */}
                     <div className="box">
-                    <Row id="portfolio">
+                    <Row className="portfolio">
                         <div className="top-border">
                             <h1>Portfolio</h1>
                         </div>
-                      <Col>
-                        <Carousel fade>
+                       <Col id="carousel-box">
+                            <Carousel fade ref={carouselRef}>
                                 <Carousel.Item>
                                     <div className="project-img" id="project1">
                                     </div>
@@ -251,16 +265,56 @@ function Home() {
                                     </div>
                                     <div className="project-description">
                                         <h3>Halloween Hangman</h3>
-                                        <p>Escape the noose by guessing the correct word in the Halloween-themed hangman game.<br />
+                                        <p>Halloween-themed hangman game.<br />
                                         Created with HTML, CSS, JavaScript</p>
                                         <a href="https://github.com/ashleyh5440/hangman" target="_blank"><Button variant="primary">View on GitHub</Button></a>
                                     </div>
                                 </Carousel.Item>
-                        </Carousel>
-                      </Col>
+                                <Carousel.Item>
+                                    <div className="project-img" id="project8">
+                                    </div>
+                                    <div className="project-description">
+                                        <h3>Drexel University Theme Guide</h3>
+                                        <p>One of seven informational booklet for perspective students.</p>
+                                        <a href="https://drexel.edu/~/media/Drexel/Core-Site-Group/Core/Documents/admissions/undergrad/publications/humanities-social-sciences-and-education.pdf" target="_blank"><Button variant="primary">View</Button></a>
+                                    </div>
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <div className="project-img" id="project9">
+                                    </div>
+                                    <div className="project-description">
+                                        <h3>The Woman of Water</h3>
+                                        <p>Short fiction story.</p>
+                                        <a href="https://pageturnermag.com/volume-1-5/" target="_blank"><Button variant="primary">View</Button></a>
+                                    </div>
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <div className="project-img" id="project10">
+                                    </div>
+                                    <div className="project-description">
+                                        <h3>Bloomsburg University's WALES Facebook page</h3>
+                                        <p>Created page and posted regularly from August 2017 to April 2019.</p>
+                                        <a href="https://www.facebook.com/p/Bloomsburg-University-WALES-100077352408954/?paipv=0&eav=AfYHZQT6QryoQFLfIP0wLt8-shv4rnX4jmTIDGmfhw_H7CwdB7-VQcN-iRIzOMoHUi0&_rdr" target="_blank"><Button variant="primary">View</Button></a>
+                                    </div>
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <div className="project-img" id="project11">
+                                    </div>
+                                    <div className="project-description">
+                                        <h3>Investing in a Drexel University Education</h3>
+                                        <p>Script for animated video for prospective students.</p>
+                                        <a href="https://www.youtube.com/watch?v=PRtlSwv96ag" target="_blank"><Button variant="primary">View</Button></a>
+                                    </div>
+                                </Carousel.Item>
+                            </Carousel>
+                            <div className="contol-btns">
+                                <Button onClick={prevBtn}>◁</Button>
+                                <Button onClick={nextBtn}>▷</Button> 
+                            </div>
+                       </Col>
                     </Row>
                     </div>
-
+                    {/* contact section */}
                     <div className="box">
                     <Row id="contact">
                         <div className="top-border">

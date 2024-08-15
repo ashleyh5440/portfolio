@@ -12,7 +12,7 @@
 .navbar #links p:hover {
     animation: rubberBand;
     animation-duration: 1s;
-    color: #f0d20c
+    color: rgb(91, 17, 135)
 }
 
 #logo {
@@ -29,10 +29,10 @@ width: 30%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-family: "Englebert", cursive;
+    font-family: "Birthstone", cursive;
     color: white;
     text-align: center;
-    font-size: 28px;
+    font-size: 40px;
     overflow: hidden;
 }
 
