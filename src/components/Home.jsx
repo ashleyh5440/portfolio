@@ -91,8 +91,6 @@ function Home() {
         carouselRef.current.next(); 
     }
 
-
-
     return (
         <section>
             <div className="fireflies-container" ref={fireFliesContainerRef}>
@@ -110,83 +108,47 @@ function Home() {
                         <p style={{fontFamily: "Birthstone, cursive", fontSize: "32px"}}>Web developer and wordsmith</p>
                     </Row>
                 </div>
-
                <section>
                     <div className="box">
                         <div className="top-border" style={{overflow: "hidden"}}><h1>About</h1></div>
                         <Row id="about">
-                        <Col className="bio-pic-container">
-                            <img src={bioPic} />
-                        </Col>
-                        <Col>
-                            <p style={{padding: "60px 20px", lineHeight: "1.6"}}>
-                            I blend creativity with code to create websites that not only look great but also tell your story in a way that resonates with audiences. I help people and businesses establish their unique voice, craft web content and copy, and combine art and technology to build intuitive, user-friendly sites that engage visitors and drive results. </p>
-                            <div>
-                                <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-                                    <Row className="skills-box">
-                                        <Col sm={3}>
-                                            <Nav variant="pills" className="flex-column">
-                                                <Nav.Item>
-                                                    <Nav.Link eventKey="first">Web Development</Nav.Link>
-                                                </Nav.Item>
-                                                <Nav.Item>
-                                                    <Nav.Link eventKey="second">Writing</Nav.Link>
-                                                </Nav.Item>
-                                            </Nav>
-                                        </Col>
-                                        <Col sm={9}>
-                                            <Tab.Content>
-                                                <Tab.Pane eventKey="first">
-                                                    {/* <ul>
-                                                        <li>HTML</li>
-                                                        <li>Handlebars</li>
-                                                        <li>CSS</li>
-                                                        <li>Bootstrap</li>
-                                                        <li>Bulma</li>
-                                                        <li>JavaScript</li>
-                                                        <li>React</li>
-                                                        <li>jQuery</li>
-                                                        <li>Node.js</li>
-                                                        <li>Express.js</li>
-                                                        <li>SQL</li>
-                                                        <li>MongoDB</li>
-                                                        <li>RESTful APIs</li>
-                                                        <li>UI/UX Design</li>
-                                                    </ul> */}
-                                                        <div className="badge-box">
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">HTML</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">CSS</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Bulma CSS</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Bootstrap</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">JavaScript</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">jQuery</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">React</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Handlebars</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Node.js</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Express.js</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">SQL</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">MongoDB</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">RESTful APIs</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">UI/UX Design</Badge>
-                                                        </div>
-                                                </Tab.Pane>
-                                                <Tab.Pane eventKey="second">
-                                                        <div className="wri-badge-box">
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Web Content</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Ad Copy</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Email Marketing</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Social Media Posts</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Content Editing</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Proofreading</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Mission Statements</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Brand Development</Badge>
-                                                            <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Taglines</Badge>
-                                                        </div>
-                                                </Tab.Pane>
-                                            </Tab.Content>
-                                        </Col>
-                                    </Row>
-                                </Tab.Container>
+                            <Col className="bio-pic-container">
+                                <img src={bioPic} />
+                            </Col>
+                            <Col>
+                                <p style={{padding: "60px 20px 10px 20px", lineHeight: "1.6"}}>
+                                I blend creativity with code to create websites that look great and tell your story in a way that resonates with audiences. I help people and businesses establish their unique voice, craft web content and copy, and combine art and technology to build intuitive, user-friendly sites that engage visitors and drive results. </p>
+                            <div className="skills-box">
+                                <Col>
+                                <h4>Web Development</h4>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Bulma CSS</li>
+                                        <li>Bootstrap</li>
+                                        <li>JavaScript</li>
+                                        <li>React</li>
+                                        <li>Node.js</li>
+                                        <li>Express.js</li>
+                                        <li>SQL</li>
+                                        <li>MongoDB</li>
+                                        <li>REST API</li>
+                                        <li>UI/UX Design</li>
+                                    </ul>
+                                </Col>
+                                <Col>
+                                    <h4>Web Development</h4>
+                                    <ul>
+                                        <li>Ad Copy</li>
+                                        <li>Email Marketing</li>
+                                        <li>Social Media Posts</li>
+                                        <li>Content Development & Editing</li>
+                                        <li>Proofreading</li>
+                                        <li>Mission Statements</li>
+                                        <li>Brand Development</li>
+                                        <li>Taglines</li>
+                                    </ul>
+                                </Col>
                             </div>
                         </Col>
                         </Row>
@@ -335,3 +297,27 @@ function Home() {
 }
 
 export default Home;
+
+{/* <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">HTML</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">CSS</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Bulma CSS</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Bootstrap</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">JavaScript</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">jQuery</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">React</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Handlebars</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Node.js</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Express.js</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">SQL</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">MongoDB</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">RESTful APIs</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">UI/UX Design</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Web Content</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Ad Copy</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Email Marketing</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Social Media Posts</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Content Editing</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Proofreading</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Mission Statements</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Brand Development</Badge>
+                                <Badge bg="secondary" className="badge animate__animated animate__pulse animate__infinite">Taglines</Badge> */}
