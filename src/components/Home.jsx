@@ -137,7 +137,7 @@ function Home() {
                                     </ul>
                                 </Col>
                                 <Col>
-                                    <h4>Web Development</h4>
+                                    <h4>Writing</h4>
                                     <ul>
                                         <li>Ad Copy</li>
                                         <li>Email Marketing</li>
@@ -171,7 +171,7 @@ function Home() {
                                         <a href="https://gods-and-beasts.onrender.com/" target="_blank"><Button variant="primary">Visit site</Button></a>
                                     </div>
                                 </Carousel.Item>
-                                <Carousel.Item>
+                                {/* <Carousel.Item>
                                     <div className="project-img" id="project7">
                                     </div>
                                     <div className="project-description">
@@ -180,7 +180,7 @@ function Home() {
                                         Created with React, CSS</p>
                                         <a href="https://github.com/ashleyh5440/elsewhere-emporium" target="_blank"><Button variant="primary">View on GitHub</Button></a>
                                     </div>
-                                </Carousel.Item>
+                                </Carousel.Item> */}
                                 <Carousel.Item>
                                     <div className="project-img" id="project2">
                                     </div>
